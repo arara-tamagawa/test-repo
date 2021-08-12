@@ -22,3 +22,4 @@ Resources:
       Handler: tama_function.lambda_handler
       Runtime: python3.8
       FunctionName: HelloYoppyTest-tama
+      CodeUri: tama_function.py
