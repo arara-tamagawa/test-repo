@@ -28,6 +28,15 @@ Resources:
 
 
 
+# API_gatewayがlambdaを呼び出すためのpermission
+  APIgatewayPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref 'HelloYoppytest1'
+      Action: lambda:InvokeFunction # principalがlambdaにどんな行動をするか
+      Principal: apigateway.amazonaws.com # api-gatewayがlambdaを呼び出す
+
+
   S3AccessRole:
     Type: AWS::IAM::Role
     Properties:
