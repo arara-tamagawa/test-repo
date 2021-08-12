@@ -2,9 +2,23 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Hello yoppy
 Resources:
-  HelloYoppytest:
+  HelloYoppytest1:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: lambda_function.lambda_handler
+      Handler: yutomen_function.lambda_handler
       Runtime: python3.8
-      FunctionName: HelloYoppyPipeTest
+      FunctionName: HelloYoppyPipeTest-yuto
+  
+  HelloYoppytest2:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: tuan_function.lambda_handler
+      Runtime: python3.8
+      FunctionName: HelloYoppyTest-tuan
+
+  HelloYoppytest3:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: tama_function.lambda_handler
+      Runtime: python3.8
+      FunctionName: HelloYoppyTest-tama
