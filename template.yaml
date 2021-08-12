@@ -187,7 +187,7 @@ Resources:
     Properties:
       AuthorizationType: NONE
       RestApiId: !Ref ApiGatewayRestApi
-      ResourceId: !Ref ApiGatewayElectedMethod 
+      ResourceId: !Ref ApiGatewayElectedResource
       HttpMethod: OPTIONS
       Integration:
         Type: MOCK
