@@ -183,7 +183,7 @@ Resources:
           method.response.header.Access-Control-Allow-Origin: true
   ApiGatewayOptionsMethod: # trong変更
     Type: AWS::ApiGateway::Method
-    DependsOn: LambdaElectedFunction
+    DependsOn: HelloYoppytest2
     Properties:
       AuthorizationType: NONE
       RestApiId: !Ref ApiGatewayRestApi
