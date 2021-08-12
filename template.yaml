@@ -8,6 +8,7 @@ Resources:
       Handler: yutomen_function.lambda_handler
       Runtime: python3.8
       FunctionName: HelloYoppyPipeTest-yuto
+      CodeUri: yutomen_function.py
   
   HelloYoppytest2:
     Type: AWS::Serverless::Function
@@ -15,6 +16,7 @@ Resources:
       Handler: tuan_function.lambda_handler
       Runtime: python3.8
       FunctionName: HelloYoppyTest-tuan
+      CodeUri: tuan_function.py
 
   HelloYoppytest3:
     Type: AWS::Serverless::Function
